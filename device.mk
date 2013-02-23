@@ -238,10 +238,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
-	media.aac_51_output_enabled=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	debug.prerotation.disable=1
+    media.aac_51_output_enabled=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
         debug.egl.recordable.rgba8888=1
@@ -254,3 +251,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.enable-charging-led=0
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
+# This is the mako-specific audio package
+$(call inherit-product, frameworks/base/data/sounds/AudioPackage10.mk)
