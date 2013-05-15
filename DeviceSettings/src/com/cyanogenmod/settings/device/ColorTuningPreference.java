@@ -159,8 +159,7 @@ public class ColorTuningPreference extends DialogPreference {
             mCurrentColors[mIndex] = String.valueOf(progress);
             writeColors(TextUtils.join(" ", mCurrentColors));
 
-            int percent = Math.round(100F * progress / MAX_VALUE);
-            mValue.setText(String.format("%d%%", percent));
+            mValue.setText(String.format("%d", progress));
         }
 
         @Override

@@ -27,8 +27,19 @@
             android:summary="@string/color_tuning_summary_head" />
     </PreferenceCategory>
 
-    <!-- General settings -->
-    <PreferenceCategory android:key="category_hardware"
+    <!-- Gamma tuning -->
+    <PreferenceCategory
+        android:key="category_gamma"
+        android:title="@string/category_gamma_title" >
+        <com.cyanogenmod.settings.device.GammaTuningPreference
+            android:key="gamma_tuning"
+            android:title="@string/gamma_tuning_title_head"
+            android:summary="@string/gamma_tuning_summary_head" />
+    </PreferenceCategory>
+
+    <!-- Vibration tuning -->
+    <PreferenceCategory
+        android:key="category_hardware"
         android:title="@string/category_hardware_title">
         <com.cyanogenmod.settings.device.VibratorTuningPreference
             android:key="vibrator_tuning"

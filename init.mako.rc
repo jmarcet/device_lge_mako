@@ -222,6 +222,16 @@ on post-fs-data
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_ctrl
 
+    # write permission for gamma control
+    chown system system /sys/devices/platform/mipi_lgit.1537/kgamma_r
+    chown system system /sys/devices/platform/mipi_lgit.1537/kgamma_g
+    chown system system /sys/devices/platform/mipi_lgit.1537/kgamma_b
+    chown system system /sys/devices/platform/mipi_lgit.1537/kgamma_apply
+    chmod 0660 /sys/devices/platform/mipi_lgit.1537/kgamma_r
+    chmod 0660 /sys/devices/platform/mipi_lgit.1537/kgamma_g
+    chmod 0660 /sys/devices/platform/mipi_lgit.1537/kgamma_b
+    chmod 0660 /sys/devices/platform/mipi_lgit.1537/kgamma_apply
+
     # Enable Power modes and set the CPU Freq Sampling rates
     write /sys/module/rpm_resources/enable_low_power/L2_cache 1
     write /sys/module/rpm_resources/enable_low_power/pxo 1
