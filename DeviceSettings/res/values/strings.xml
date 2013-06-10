@@ -23,22 +23,10 @@
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
     <string name="defaults_button">Reset to default</string>
-    <string name="category_gamma_title">Gamma</string>
-    <string name="gamma_tuning_title_head">Gamma calibration</string>
-    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
-    <string name="gamma_amp0_red_title">Amp 0 Red</string>
-    <string name="gamma_amp0_green_title">Amp 0 Green</string>
-    <string name="gamma_amp0_blue_title">Amp 0 Blue</string>
-    <string name="gamma_amp1_red_title">Amp 1 Red</string>
-    <string name="gamma_amp1_green_title">Amp 1 Green</string>
-    <string name="gamma_amp1_blue_title">Amp 1 Blue</string>
-
     <string name="category_hardware_title">Hardware</string>
     <string name="vibrator_tuning_title_head">Vibration strength</string>
     <string name="vibrator_tuning_summary_head">Adjust the strength of the vibration feedback</string>
     <string name="vibe_warning">Values higher than 88 are not recommended</string>
     <string name="vibrator_title">Vibration strength</string>
-
-    <string name="defaults_button">Reset to default</string>
 
 </resources>
