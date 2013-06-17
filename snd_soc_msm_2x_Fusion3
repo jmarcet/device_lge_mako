@@ -1801,7 +1801,7 @@ SectionDevice
 		'SLIM TX3 MUX':0:ZERO
 	EndSequence
 
-	ACDBID	81:1
+	ACDBID	7:1
 
 EndSection
 
@@ -2733,7 +2733,7 @@ SectionDevice
 		'IIR1 INP1 MUX':0:ZERO
 	EndSequence
 
-	ACDBID	91:2
+	ACDBID	6:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
