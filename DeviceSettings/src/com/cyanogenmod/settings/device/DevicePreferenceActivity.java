@@ -26,9 +26,11 @@ public class DevicePreferenceActivity extends PreferenceFragment {
     public static final String SHARED_PREFERENCES_BASENAME = "com.cyanogenmod.settings.device";
     public static final String ACTION_UPDATE_PREFERENCES = "com.cyanogenmod.settings.device.UPDATE";
     public static final String KEY_COLOR_TUNING = "color_tuning";
+    public static final String KEY_GAMMA_TUNING = "gamma_tuning";
     public static final String KEY_VIBRATOR_TUNING = "vibrator_tuning";
 
     private ColorTuningPreference mColorTuning;
+    private GammaTuningPreference mGammaTuning;
     private VibratorTuningPreference mVibratorTuning;
 
     @Override
@@ -39,6 +41,9 @@ public class DevicePreferenceActivity extends PreferenceFragment {
 
         mColorTuning = (ColorTuningPreference) findPreference(KEY_COLOR_TUNING);
         mColorTuning.setEnabled(ColorTuningPreference.isSupported());
+
+        mGammaTuning = (GammaTuningPreference) findPreference(KEY_GAMMA_TUNING);
+        mGammaTuning.setEnabled(GammaTuningPreference.isSupported());
 
         mVibratorTuning = (VibratorTuningPreference) findPreference(KEY_VIBRATOR_TUNING);
         mVibratorTuning.setEnabled(VibratorTuningPreference.isSupported());
